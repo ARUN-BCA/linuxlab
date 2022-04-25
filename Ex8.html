@@ -1,0 +1,53 @@
+<a href="index.html"> HOME </a>
+
+<h4>
+exercise 8
+</h4>
+
+
+<p>
+clear<br>
+echo display files end with vowels<br><br>
+echo --------------------------------<br>
+echo a -files ending with a<br>
+echo e -files ending with e <br>
+echo i -files ending with i<br>
+echo o -files ending with o<br>
+echo u -files ending with u<br>
+echo -n "Type a letter of your choice--->"<br>
+read ch<br>
+echo FILES ENDING WITH $ch<br>
+echo -------------------------------<br>
+case $ch in <br>
+a|A ) ls | grep 'a$'<br>
+;;<br>
+e|E ) ls | grep 'e$'<br>
+;;<br>
+i|I ) ls | grep 'i$'<br>
+;;<br>
+o|O ) ls | grep 'o$'<br>
+;;<br>
+u|U ) ls | grep 'u$'<br>
+;;<br>
+* ) echo "Wrong choice"<br>
+esac<br>
+
+
+<h3>
+OUTPUT 
+</h3>
+
+display files end with vowels<br>
+--------------------------------<br>
+a -files ending with a<br>
+e -files ending with e<br>
+i -files ending with i<br>
+o -files ending with o<br>
+u -files ending with u<br>
+Type a letter of your choice--->a<br>
+FILES ENDING WITH a<br>
+-------------------------------<br>
+a<br>
+fileaa<br>
+
+</p>

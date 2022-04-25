@@ -1,0 +1,139 @@
+<a href="index.html"> HOME </a>
+
+
+<h4>
+exercise 9
+</h4>
+
+
+<p>
+
+clear<br>
+echo sorting files<br>
+echo -------------------------<br>
+echo 1 - ALPHABETICAL ORDER<br>
+echo 2 - ASCENDING ORDER<br>
+echo 3 - DESCENDING ORDER<br>
+echo -n " your choice---> "<br>
+read ch <br>
+if [ $ch -ge 1 ] && [ $ch -le 3 ]<br>
+then<br>
+echo enter filename to be sorted<br>
+read fname<br>
+fi<br>
+case $ch in <br>
+1 ) echo alphabetical order <br>
+echo ------------------------<br>
+sort < $fname<br>
+echo ------------------------<br>
+;;<br>
+2 ) echo ascending order <br>
+echo ------------------------<br>
+sort -n < $fname<br>
+echo ------------------------<br>
+;;<br>
+3 ) echo descening order <br>
+echo ------------------------<br>
+sort -r < $fname<br>
+echo ------------------------<br>
+;;<br>
+* ) echo " wrong choice "<br>
+esac<br>
+
+<br>
+
+<h3>
+OUTPUT 1
+</h3>
+
+sorting files<br>
+-------------------------<br>
+1 - ALPHABETICAL ORDER<br>
+2 - ASCENDING ORDER<br>
+3 - DESCENDING ORDER<br>
+ your choice---> 1<br>
+enter filename to be sorted<br>
+names<br>
+alphabetical order<br>
+------------------------<br>
+
+amar<br>
+arun<br>
+azar<br>
+chandru<br>
+diva<br>
+karuna
+kishore<br>
+mani<br>
+ponnar<br>
+pugal<br>
+siva<br>
+------------------------<br>
+
+<br>
+
+<h3>
+OUTPUT 2
+</h3>
+
+sorting files<br>
+-------------------------<br>
+1 - ALPHABETICAL ORDER<br>
+2 - ASCENDING ORDER<br>
+3 - DESCENDING ORDER<br>
+ your choice---> 2<br>
+enter filename to be sorted<br>
+numbers<br>
+ascending order<br>
+------------------------<br>
+
+1<br>
+12<br>
+23<br>
+33<br>
+44<br>
+45<br>
+55<br>
+90<br>
+111<br>
+123<br>
+332<br>
+455<br>
+543<br>
+1222<br>
+------------------------<br>
+
+<br>
+
+<h3>
+OUTPUT 3
+</h3>
+
+sorting files<br>
+-------------------------<br>
+1 - ALPHABETICAL ORDER<br>
+2 - ASCENDING ORDER<br>
+3 - DESCENDING ORDER<br>
+ your choice---> 3<br>
+enter filename to be sorted<br>
+names<br>
+descening order<br>
+------------------------<br>
+siva<br>
+pugal<br>
+ponnar<br>
+mani<br>
+kishore<br>
+karuna<br>
+diva<br>
+chandru<br>
+azar<br>
+arun<br>
+amar<br>
+
+------------------------<br>
+
+<br><br>
+
+
+</p>

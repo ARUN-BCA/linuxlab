@@ -1,0 +1,19 @@
+a {
+	color: royalblue;
+}
+body {
+	background: url(image1.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+h1 {
+	color: ghostwhite;
+	font-family: verdana ;
+}
+h4 {
+	color: ghostwhite;
+}
+p {
+	color: ghostwhite;
+	text-align: center;
+
+}

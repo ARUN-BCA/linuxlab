@@ -1,0 +1,64 @@
+<a href="index.html"> HOME </a>
+
+<h4>
+exercise 7
+</h4>
+
+<h3>#Employee pay bill preparation</h3>
+
+<p>
+
+clear<br>
+echo enter the name<br>
+read cname<br>
+echo enter the meter number<br>
+read mno <br>
+echo enter current month reading<br>
+read cmr<br>
+echo enter last month reading <br>
+read lmr<br>
+unit=` expr $cmr - $lmr `<br>
+clear <br>
+echo ----------------------------------<br>
+echo Electricity bill MAR 22<br>
+echo Consumer name       $cname<br>
+echo Consumer number     $mno<br>
+echo Current month reading    $cmr<br>
+echo Last month reading    $lmr<br>
+echo Units consumed     $unit<br>
+if [ $unit -gt 0 ] && [ $unit -le 100 ]<br>
+then <br>
+charge=$(echo "$unit*0.75" | bc -l)<br>
+elif [ $unit -gt 100 ] && [ $unit -le 200 ]<br>
+then<br>
+unit=` expr $unit - 100 `<br>
+charge=$(echo "100*0.75+$unit*1.5" | bc -l)<br>
+elif [ $unit -gt 200 ]<br>
+then<br>
+unit=` expr $unit - 200 `<br>
+charge=$(echo "100*0.75+100*1.5+$unit*3.0" | bc -l)<br>
+fi<br>
+echo charge  $charge<br>
+echo ------------------------------------<br><br>
+
+
+</p>
+
+<br>
+
+<h3>
+OUTPUT 
+</h3>
+
+
+----------------------------------<br>
+Electricity bill MAR 22<br>
+Consumer name arun<br>
+Consumer number 7323<br>
+Current month reading 350<br>
+Last month reading 100<br>
+Units consumed 250<br>
+charge 375.00<br>
+------------------------------------<br>
+
+

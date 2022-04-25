@@ -1,0 +1,79 @@
+<a href="index.html"> HOME </a>
+
+<h4>
+exercise 6
+</h4>
+
+<h3>
+EMPLOYEE PAY BILL
+</h3>
+
+<br>
+
+<p>
+
+
+clear<br>
+echo Enter employee name<br>
+read empname <br>
+echo Enter employee number <br>
+read empno<br>
+echo enter basic pay<br>
+read bpay<br>
+da=` expr $bpay \* 50 / 100 `<br>
+hra=` expr $bpay \* 20 / 100 `<br>
+grosspay=` expr $bpay + $da + $hra `<br>
+ded=` expr $bpay \* 20 / 100 `<br>
+netpay=` expr $grosspay - $ded`<br>
+clear<br>
+echo "................................"<br>
+echo arun private limited thanjavur<br>
+echo pay bill december 2022<br>
+echo "................................"<br>
+echo Employee name $empname<br>
+echo Employee number $empno<br>
+echo "................................"<br>
+echo "basic pay Rs."$bpay<br>
+echo "DA       Rs."$da<br>
+echo "HRA     Rs."$hra<br>
+echo "................................."<br>
+echo "gross pay       Rs."$grosspay<br>
+echo ".................................."<br>
+echo "Deduction      Rs."$ded<br>
+echo "....................................."<br>
+echo "Net pay           Rs."$netpay<br>
+echo "......................................"<br>
+echo "......................................................"<br>
+
+</p>
+
+<br>
+
+<h3>
+OUTPUT 
+</h3>
+
+<p>
+
+................................<br>
+arun private limited thanjavur<br>
+pay bill december 2022<br>
+................................<br>
+Employee name arun<br>
+Employee number ak47<br>
+................................<br>
+basic pay Rs.7000<br>
+DA       Rs.3500<br>
+HRA     Rs.1400<br>
+.................................<br>
+gross pay       Rs.11900<br>
+..................................<br>
+Deduction      Rs.1400<br>
+.....................................<br>
+Net pay           Rs.10500<br>
+......................................<br>
+......................................................<br>
+
+
+</p>
+

@@ -1,0 +1,71 @@
+<a href="index.html"> HOME </a>
+
+
+<h4>
+exercise 4
+</h4>
+
+<h3>
+CHECK FOR PRIME NUMBER
+</h3>
+
+<br>
+
+<p>
+
+clear <br>
+echo Prime number checking <br>
+echo ____________________<br>
+echo enter a number <br>
+read n<br>
+for((i=2;i <= $n/2;i++))
+do<br>
+if [ `expr $n % $i` -eq 0 ] <br>
+then<br>
+echo the number $n is composite<br>
+exit<br>
+fi<br>
+done <br>
+echo the number $n is prime<br>
+
+</p>
+
+<br>
+
+<h3>
+OUTPUT 1
+</h3>
+
+<p>
+
+Prime number checking<br>
+____________________<br>
+enter a number<br>
+373<br>
+the number 373 is prime<br>
+
+</p>
+
+<h3>
+OUTPUT 2
+</h3>
+
+<p>
+
+Prime number checking<br>
+____________________<br>
+enter a number<br>
+76542<br>
+the number 76542 is composite<br>
+
+</p>
+
+
+
+
+
+
+
+
+
+

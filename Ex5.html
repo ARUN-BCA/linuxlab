@@ -1,0 +1,111 @@
+<a href="index.html"> HOME </a>
+
+<h4>
+exercise 5
+</h4>
+
+<h3>
+STUDENT MARK LIST PROGRAM
+</h3>
+
+<br>
+
+<p>
+
+clear<br>
+echo Enter student name <br>
+read stuname <br>
+echo Enter register number <br>
+read regno <br>
+echo Enter four subject mark one by one <br>
+read m1<br>
+read m2<br>
+read m3<br>
+read m4<br>
+total=` expr $m1 + $m2 + $m3 + $m4 `<br>
+clear<br>
+echo __________________________________<br>
+echo Bharathidasan university trichy <br>
+echo Govt arts college,trichy-22<br>
+echo Statement of mark april 2022<br>
+echo Semester V<br>
+echo __________________________________<br>
+echo Student name $stuname<br>
+echo Register no $regno<br>
+echo "Programming in java" $m1<br>
+echo "Web design" $m2<br>
+echo "Software engineering" $m3<br>
+echo "Computer graphics" $m4<br>
+echo __________________________________<br>
+echo Total mark $total<br>
+echo __________________________________<br>
+if [ $m1 -ge 40 ] && [ $m2 -ge 40 ] && [ $m3 -ge 40 ] && [ $m4 -ge 40 ]<br>
+then<br>
+echo __________________________________<br>
+echo result pass<br>
+percnt=` expr $total / 4 `<br>
+echo percentage $percnt %<br>
+echo __________________________________<br>
+else<br>
+echo result fail<br>
+fi<br>
+
+</p>
+
+<br>
+
+<h3>
+OUTPUT 1
+</h3>
+
+<p>
+
+__________________________________<br>
+Bharathidasan university trichy<br>
+Govt arts college,trichy-22<br>
+Statement of mark april 2022<br>
+Semester V<br>
+__________________________________<br>
+Student name arun<br>
+Register no cb19s123456<br>
+Programming in java 78<br>
+Web design 98<br>
+Software engineering 88<br>
+Computer graphics 90<br>
+__________________________________<br>
+Total mark 354<br>
+__________________________________<br>
+__________________________________<br>
+result pass<br>
+percentage 88 %<br>
+__________________________________<br>
+
+</p>
+
+
+<br>
+
+<h3>
+OUTPUT 2
+</h3>
+
+<p>
+
+__________________________________<br>
+Bharathidasan university trichy<br>
+Govt arts college,trichy-22<br>
+Statement of mark april 2022<br>
+Semester V<br>
+__________________________________<br>
+Student name kumar<br>
+Register no cb19s123457<br>
+Programming in java 37<br>
+Web design 49<br>
+Software engineering 57<br>
+Computer graphics 72<br>
+__________________________________<br>
+Total mark 215<br>
+__________________________________<br>
+result fail<br>
+
+</p>
